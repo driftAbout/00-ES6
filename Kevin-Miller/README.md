@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+Anywhere a variable was getting reassigned a value, I change its declaration from const to let.  Variables that were objects or arrays where new data was getting added, like pushing a value to an array, were left as const.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Template literals are much easier than using all those plus signs and quotes.  There are times when your data is in an array when you can use join to create a string that would be easier than looping and assigning variable and creating a template literal.
